@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleTelaRegistro2.css">
+    <meta http-equiv="refresh" content=""/> <!--Atualiza a pagina automaticamente-->
+    <title>TelaDeRegistro2</title>
+</head>
+<body>
+    <div class="cantoDireito"> <!-- Imagem que fica no canto direito da página-->
+        <img src="..//imagens/imagemDaDireita.png" alt="imagemTelaDeRegistro" class="imagemTelaDeRegistro">      
+    </div>
+    <p class="textoSuperior">INFORMAÇÕES DE CONTATO</p> <!-- Informações do usuario-->
+    <div class="dadosPessoais">
+        <form action="" method="post">
+            <div id="caixasDeTexto">
+                <input type="text" name="cepUsuario" id="cepUsuario" placeholder="CEP" required>
+                <input type="text" name="cidadeUsuario" id="cidadeUsuario" placeholder="CIDADE" required></br>
+                <p></p>
+                <input type="text" name="EnderecoUsuario" id="enderecoUsuario" placeholder="ENDEREÇO" required>
+                <input type="text" name="numeroCasaUsuario" id="numeroCasaUsuario" placeholder="Nº" required></br>
+                <p></p>
+                <input type="text" name="bairroUsuario" id="bairroUsuario" placeholder="BAIRRO" required> 
+                <input type="tel" name="telefoneUsuario" id="telefoneUsuario" placeholder="TELEFONE" autocomplete="tel" pattern="^[0-9]{4,5}-[0-9]{4}$" required> </br>
+                <!-- Estudar mais RegEx para desenvolver melhor as expressões regulares -->
+                <p></p>
+                <input type="text" name="rgUsuario" id="rgUsuario" placeholder="RG" required>
+                <input type="text" name="cpfUsuario" id="cpfUsuario" placeholder="CPF" required>
+                <p></p>
+            </div>
+                    <div>
+                        <a href="..//codigos/telaRegistro1.html">
+                            <input type="button" value="Voltar" class="botaoVoltar"></a>
+                        <input type="button" type="submit" value="Continuar" class="botaoContinuar" id="loginButton">
+                    </div>
+        </form>
+    </div>
+    
+    <!-- Texto que aparece no balão-->
+    <div class="balao" id="balao">Login realizado com sucesso!</div> 
+
+    <script>
+    document.getElementById('loginButton').addEventListener('click', function() {
+                    // Mostrar balão flutuante
+                    document.getElementById('balao').style.display = 'block';
+    
+                    // Ocultar o balão após 3 segundos
+                    setTimeout(function() {
+                        document.getElementById('balao').style.display = 'none';
+
+                    // Redirecionar para outra página após 3 segundos
+                    window.location.href = 'F:/trabalhoFinalSenai/siteCompleto/Home/home.html';  // ALTERAR O PARA ONDE ESTÁ SENDO REDIRECIONADO 
+                    }, 3000);    
+    }); 
+
+    // Define um padrão na forma de escrever o número de CPF
+    document.getElementById('cpfUsuario').addEventListener('input', function(e) {
+    var value = e.target.value;
+    var cpfPattern = value.replace(/\D/g, '') // Remove qualquer coisa que não seja número
+						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o terceiro dígito
+						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o sexto dígito
+						.replace(/(\d{3})(\d)/, '$1-$2') // Adiciona traço após o nono dígito
+						.replace(/(-\d{2})\d+?$/, '$1'); // Impede entrada de mais de 11 dígitos
+    e.target.value = cpfPattern;
+    });
+
+    // Define um padrão na forma de escrever o número de telefone 
+    document.getElementById('telefoneUsuario').addEventListener('input', function(e) {
+    var value = e.target.value;
+    var telefonePattern = value.replace(/\D/g, '') // Remove qualquer coisa que não seja número
+						.replace(/^(\d{2})(\d)/, '($1) $2') // Adiciona parênteses nos dois primeiros dígitos
+						.replace(/(\d{4})$/, '-$1'); // Adiciona hífen antes dos últimos quatro dígitos
+    e.target.value = telefonePattern;
+    });
+    </script>
+
+    <!-- API que autocompleta o endereço apartir do CEP informado (https://brasilapi.com.br/docs#tag/CEP)-->
+    <script type="text/javascript" src="cep.js"></script>
+
+</body>
+</html>

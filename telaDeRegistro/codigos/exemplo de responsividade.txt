@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imagem Responsiva Mantendo Posição</title>
+<style>
+  .container {
+    position: relative; /* Define a posição relativa do contêiner pai */
+    width: 100%; /* Ocupa a largura total da viewport */
+    max-width: 1200px; /* Define uma largura máxima para o contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+  }
+
+  .imagem-responsiva {
+    position: absolute; /* Posicionamento absoluto em relação ao contêiner pai */
+    width: 30%; /* Largura inicial da imagem como uma porcentagem do contêiner pai */
+    top: 10%; /* Posição da parte superior da imagem como uma porcentagem do contêiner pai */
+    left: 10%; /* Posição da esquerda da imagem como uma porcentagem do contêiner pai */
+  }
+
+  /* Media queries para ajustes específicos de resolução */
+  @media (max-width: 768px) {
+    .imagem-responsiva {
+      width: 40%; /* Aumenta a largura da imagem em telas menores */
+      top: 5%; /* Ajusta a posição da parte superior em telas menores */
+      left: 5%; /* Ajusta a posição da esquerda em telas menores */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="sua-imagem.jpg" alt="Descrição da Imagem" class="imagem-responsiva">
+</div>
+
+</body>
+</html>
+O .container serve como o elemento pai que contém a imagem. Ele é responsável por centralizar o conteúdo e limitar sua largura máxima.
+A .imagem-responsiva é posicionada de forma absoluta dentro do contêiner relativo. Isso permite que você controle sua posição e tamanho em relação ao contêiner pai.
+O uso de unidades percentuais para width, top e left da imagem a torna responsiva, ajustando-se proporcionalmente ao tamanho do contêiner pai.
+As media queries são usadas para fazer ajustes específicos com base no tamanho da tela. Por exemplo, em telas menores que 768 pixels de largura, a largura da imagem aumenta para 40%, e sua posição é ajustada para se manter apropriada ao novo tamanho da tela.

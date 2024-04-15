@@ -1,0 +1,134 @@
+@font-face {
+    font-family: petr;
+    src: url(fontes/fontpetr.ttf);
+}
+
+/*VARIAVEIS*/
+:root {
+    --cor0: #C4F9BC;
+    --cor1: #81c775;
+    --cor2: #008542;
+    --cor3: #FCB823;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.inteiro {
+    display: flex;
+    height: 100vh
+}
+
+.metade {
+    flex: 1;
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.metade2 {
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.metade img {
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 50%;
+    width: 70%
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+   margin-inline: auto;
+   margin-bottom: 50px;
+}
+
+.metade2 {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2))
+}
+
+#conteudo {
+    background-color: white;
+    padding: 100px 40px 100px 40px;
+}
+
+
+
+input {
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+#botao {
+    display: inline-block;
+    margin-top: 20px;
+    /* personalização */
+    padding: 15px 30px 15px 30px;
+    background-color: var(--cor2);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.227);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+}
+  
+
+#botao:hover{
+    padding: 16px 31px 16px 31px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.364);
+    margin-top: 18px;
+}
+
+
+#links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 80%;
+    margin-inline: auto;
+   
+}
+
+#links a{
+    font-size: 20px;
+    text-decoration: none;
+}
+#links a:hover{
+    text-decoration:underline ;
+}
+
+p {
+    font-size: 25px;
+    padding: 15px 0px 10px 0px;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+
+}
+
+h1 {
+    font-size: 110px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #FCB823;
+    font-weight: bold;
+}

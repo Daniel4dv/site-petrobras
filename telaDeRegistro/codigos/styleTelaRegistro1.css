@@ -1,0 +1,102 @@
+html{
+    font-family: petr;
+    src: url(..//fontes/fontpetr.ttf);
+}
+form{
+    display: inline-block;
+}
+.imagemTelaDeRegistro{
+    width: auto; /* largura */ /*valor anterior 650px*/
+    max-width: 100%; /* largura máxima da imagem*/
+    height: auto; /* altura */ /* valor anterior 623.4px */
+    max-width: 100%;
+    background-image: linear-gradient(a); 
+    height: auto; /* A altura é ajustada automaticamente para manter as proporções */
+    display: block; /* Garante que a imagem não tenha espaço extra embaixo */
+    position: relative; /* A posição da imagem pode ser alterada*/
+    margin: 0 auto; 
+    display: block;
+    float: right;
+}
+body{
+    background-image: linear-gradient(to left, #31970D, 10%, white); /* Tom verde de fundo */
+    margin: 0px; /* Deixa os elementos laterais colados na parede do navegador */
+}
+.dadosPessoais{
+    text-align: center;
+    margin-top: 50px; /* Altura das caixas de texto */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#nomeCompleto, #emailUsuario{
+    width: 290px; /* largura */
+}
+.iconePetrobrasClass{
+    text-align: center;
+}
+.iconePetrobras{
+    text-align: center;
+    width: 400px; /* largura */
+    height: 260px; /* altura */
+}
+#nomeCompleto,#emailUsuario,#senhaUsuario,#confirmarSenhaUsuario{
+    border-color: #FCB823;
+    border-radius: 5px; /* deixa as quinas arredondadas*/
+    width: 480px;  /* largura */
+    height: 40px; /* altura */
+    border-style: solid;
+    font-size: 17px; /* tamanho da fonte do texto dentro da caixa*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* funcao de sombra */
+    font-family: petr;
+    font-weight: bold;
+}
+.botaoVoltar,.botaoContinuar{
+    background-color: #FCB823;
+    border-radius: 20px; /* deixar os cantos curvos */
+    height: 40px; /* altura */
+    width: 100px; /* largura */
+    text-align: center;
+    border-style: solid; /* deixa a cor da borda fixa, sem interferencia de sombra e outras coisas*/
+    font-size: 15px; /* tamanho da fonte */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /*funcao de sombra*/
+    border-color: #FCB823; /* Cor da borda dos botões */ 
+    font-family: petr; 
+    font-weight: bold;
+}
+#senhaUsuario,#confirmarSenhaUsuario{
+    height: 40px; /* altura */
+    width: 230px; /* largura */
+}
+.termosDeUso{
+    font-family: petr;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#olho{
+    display: inline-block;
+}
+input[type="text"]:focus {  /* NÃO ESTÁ FUNCIONANDO, DAR UMA OLHADA DEPOIS */
+    border-color: #008542; /* Altera a cor da borda para verde quando o input está focado */
+}
+input[type="submit"]:hover { /* altera a cor do elemento input do tipo "submit" quando colocar o mouse em cima*/
+    background-color: #C6952B; /* cor a ser alterada */
+    border-color: #C6952B; /* alterar a cor da borda também*/
+}
+@media screen and (max-width: 960px) { /*Função para quando a tela tiver menos de 960px de largura, a imagem vai sumir*/
+    .imagemTelaDeRegistro{
+        display: none; /* Define que a imagem vai sumir */
+    }
+}
+@media screen and (max-width: 506px) { /*Função para quando a tela tiver menos de 506px os botões citados irão diminuir de tamanho*/
+    #senhaUsuario,#confirmarSenhaUsuario{
+        height: 40px; /* altura */
+        width: 234px; /* largura */
+    }
+}

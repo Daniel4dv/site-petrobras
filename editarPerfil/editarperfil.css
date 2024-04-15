@@ -1,0 +1,152 @@
+@font-face {
+    font-family: petr;
+    src: url(fontes/fontpetr.ttf);
+  }
+
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+
+    .prehead {
+      background: #C4F9BB;
+      padding: 20px;
+      text-align:left ; 
+    }
+    
+    .branco {
+      background: #ffffff;
+      padding: 5px;
+      text-align:left ;
+      list-style-type: none;
+     
+    }
+    
+    #nav{
+      
+      margin: auto;
+      margin-left: 100px;
+      display: inline-block;
+
+      max-width:1200px;
+          }
+    input{
+      max-width: 300px;
+      height: 30px;
+      border-radius: 20px;
+      border-color: rgb(4, 105, 4);
+      border-style: solid;
+      font-family: sans-serif;
+      padding-left: 15px;
+    }
+    .links {
+      text-decoration: none;
+      color:  rgb(4, 105, 4);
+      padding: 15px 30px; /* Ajuste o padding para manter o tamanho constante */
+      border-right: 2px solid rgb(255, 226, 60);
+      text-align: center;
+      display: inline-block;
+      margin-left: -29px; /* Removendo a margem esquerda */
+      margin-right: 10px; 
+      font-size: 20px;
+      font-family:sans-serif;
+      font-weight: lighter;
+  }
+  
+  .links:hover {
+      background-color: #f8e30019;
+      padding-left: 30px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.222);
+     
+  }
+  
+    h1{
+      font-family: petr;
+      font-weight: lighter;
+      word-spacing: -20px;
+      text-shadow: 2px 2px 5px rgba(1, 54, 1, 0.276);
+     
+    }
+  
+    #logo{
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);
+    }
+  header  h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  
+    .decorative-bar {
+      
+      height: 5px; /* Altura da barra */
+      background-color:  rgb(255, 226, 60); /* Cor da barra */
+      width: 80px; /* Largura da barra */
+      margin-top: 30px; 
+      margin-left: 2px;
+     margin-left: 30px;
+      
+  }
+
+#subtitulo{
+  font-size: 35px;
+  color:rgb(0, 0, 0);
+  margin-left: 30px;
+  padding-bottom: 10px;
+
+}
+
+/*FORMULÁRIO EDITAR PERFIL*/
+#editar-perfil-form{
+    text-align: center;
+}
+/* Estilo para cada par de rótulo e campo de entrada */
+.form-group {
+    display: inline-block; /* Faz com que cada par seja exibido em linha */
+    margin-bottom: 90px; /* Adiciona um espaço entre cada par */
+    text-align: left; /* Alinha o texto à esquerda */
+    vertical-align: top; /* Alinha os elementos verticalmente ao topo */
+}
+
+/* Estilo para os rótulos */
+label {
+    display: block; /* Faz com que os rótulos ocupem toda a largura disponível */
+}
+
+/* Estilo para os campos de entrada */
+input {
+    width: calc(50% - 5px); /* Define a largura dos campos de entrada */
+}
+/* Estilo para os campos de entrada */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"] {
+    width: calc(50% - 5px); /* Define a largura dos campos de entrada */
+    height: 30px; /* Define a altura dos campos de entrada */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    border: 1px solid #00693a; /* Adiciona uma borda */
+    padding: 5px; /* Adiciona um espaço interno */
+}
+input[type="submit"] {
+    height: 40px; /* Define a altura do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    border-color: #00693a; 
+    background-color:#00693a; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
+    padding: 10px 20px; /* Adiciona um espaço interno */
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+    transition: background-color 0.3s; /* Adiciona uma transição suave de cor de fundo */
+}
+
+/* Estilo para o botão quando hover */
+input[type="submit"]:hover {
+    background-color:  #C4F9BB; /* Altera a cor de fundo quando hover */
+}

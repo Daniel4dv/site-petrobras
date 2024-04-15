@@ -1,0 +1,158 @@
+:root {
+  --cor0: #C4F9BC;
+  --cor1: #81c775;
+  --cor2: #008542;
+  --cor3: #FCB823;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/*CABEÇALHOOOO*/
+  .prehead {
+    background: #C4F9BB;
+    padding: 20px;
+    text-align:left;
+  }
+  
+  .branco {
+    background: #ffffff;
+    padding: 5px;
+    text-align:left ;
+    list-style-type: none;
+   
+  }
+  
+  #nav {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Distribui os elementos igualmente ao longo do eixo principal */
+    padding: 10px 20px; /* Adiciona um espaçamento interno */
+    margin-left: 200px;
+}
+
+  #nav img{
+    margin-left: 10px;
+    width: 100px;
+  }
+
+  #perfil {
+    text-decoration: none;
+    font-size: 23px;
+    color: var(--cor2);
+    background-color: var(--cor3);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+  }
+  #perfil:hover{
+    font-size: 25px;
+    margin-left: -2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.187);
+  }
+
+  input{
+    max-width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    border-color: rgb(4, 105, 4);
+    border-style: solid;
+    font-family: sans-serif;
+    padding-left: 15px;
+  }
+
+  .links {
+    text-decoration: none;
+    color:  rgb(4, 105, 4);
+    padding: 15px 30px; /* Ajuste o padding para manter o tamanho constante */
+    border-right: 2px solid rgb(255, 226, 60);
+    text-align: center;
+    display: inline-block;
+    margin-left: -29px; /* Removendo a margem esquerda */
+    margin-right: 10px; 
+    font-size: 20px;
+    font-family:sans-serif;
+    font-weight: lighter;
+    margin-right: 30px;
+    
+  }
+
+.links:hover {
+    background-color: #f8e30019;
+    padding-left: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.222);
+   
+}
+
+#home {
+  background-color: #f8e30019;
+  padding-left: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.222);
+}
+
+ 
+  #logo{
+width: 80px;
+height: 80px;
+margin-right: 20px;
+margin-top: 20px;
+margin-left: 20px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);
+  }
+
+  .botaologo{
+    display: inline-flex;
+    margin: 0px 0px 20px 0px;
+  }
+
+  /*CORPO DA PAGINA*/
+
+  h2#subtitulo{
+    font-size: 35px;
+    color:#000000;
+    margin-left: 30px;
+    padding-bottom: 10px;
+  }
+  .decorative-bar {
+      
+    height: 5px; /* Altura da barra */
+    background-color:  rgb(255, 226, 60); /* Cor da barra */
+    width: 80px; /* Largura da barra */
+    margin-top: 30px; 
+    margin-left: 2px;
+   margin-left: 30px;
+    
+  }
+
+  /* BOX DE DADOS*/
+.dados {
+  width: 500px; /* Define a largura das notícias, descontando a margem */
+  margin: 10px; /* Adiciona margem ao redor das notícias */
+  box-sizing: border-box; /* Faz com que a margem e o padding sejam incluídos na largura */
+  position: relative;
+}
+
+.dados img {
+  width: 100%; /* Garante que a imagem ocupe toda a largura da div */
+  height: 100%; /* Mantém a proporção da imagem */
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  border-radius: 20px;
+  filter: brightness(70%);
+  
+}
+
+img:hover {
+  filter: brightness(100%);
+  transition: 0.25s;
+}
+
+
+
+.dados-container {
+  display: flex; /*  colocar os elementos lado a lado */
+  justify-content: center; /* Distribui os elementos igualmente ao longo do eixo principal */
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha quando não houver espaço suficiente */
+}

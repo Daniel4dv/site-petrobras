@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleTelaRegistro2.css">
+    <meta http-equiv="refresh" content=""/> <!--Atualiza a pagina automaticamente-->
+    <title>TelaDeRegistro2</title>
+</head>
+<body>
+<div class="cantoDireito"> <!-- Imagem que fica no canto direito da página-->
+    <img src="..//imagens/imagem_tela_de_registro_melhorada.png" alt="imagemTelaDeRegistro" class="imagemTelaDeRegistro">      
+</div>
+<p class="textoSuperior">INFORMAÇÕES DE CONTATO</p> <!-- Informações do usuario-->
+    <div class="dadosPessoais">
+        <form action="" method="post">
+            <div id="caixasDeTexto">
+                <input type="text" name="cepUsuario" id="cepUsuario" placeholder="CEP" required>
+                <input type="text" name="cidadeUsuario" id="cidadeUsuario" placeholder="CIDADE"></br>
+                <p></p>
+                <input type="text" name="EnderecoUsuario" id="enderecoUsuario" placeholder="ENDEREÇO">
+                <input type="text" name="numeroCasaUsuario" id="numeroCasaUsuario" placeholder="Nº"></br>
+                <p></p>
+                <input type="text" name="bairroUsuario" id="bairroUsuario" placeholder="BAIRRO"> 
+                <input type="text" name="telefoneUsuario" id="telefoneUsuario" placeholder="TELEFONE"> </br>
+                <p></p>
+                <input type="text" name="rgUsuario" id="rgUsuario" placeholder="RG">
+                <input type="text" name="cpfUsuario" id="cpfUsuario" placeholder="CPF">
+                <p></p>
+            </div>
+        </form>
+            <div>
+                <form action="telaRegistro1.html" method="post">
+                    <div>
+                        <input type="submit" value="Voltar" class="botaoVoltar">
+                    </div>
+                </form>
+                <form action="" method="post">
+                    <div>
+                        <input type="button" value="Continuar" class="botaoContinuar" id="loginButton">
+                    </div>
+                </form>
+            </div>
+    </div>
+    
+    <!-- Texto que aparece no balão-->
+    <div class="balao" id="balao">Login realizado com sucesso!</div> 
+
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            // Mostrar balão flutuante
+            document.getElementById('balao').style.display = 'block';
+
+            // Ocultar o balão após 3 segundos
+            setTimeout(function() {
+                document.getElementById('balao').style.display = 'none';
+                
+                // Redirecionar para outra página após 3 segundos
+                window.location.href = '..//telaPrincipal/home.html';  // ALTERAR O PARA ONDE ESTÁ SENDO REDIRECIONADO 
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

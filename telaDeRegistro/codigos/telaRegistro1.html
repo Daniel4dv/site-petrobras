@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleTelaRegistro1.css">
+    <meta http-equiv="refresh" content=""> <!--Atualiza a pagina automaticamente-->
+    <link rel="stylesheet" href="https://github.com/devbridge/jQuery-Autocomplete/blob/master/dist/jquery.autocomplete.min.js">
+    <title>TelaDeRegistro1</title>
+    <!--    FUNÇÃO QUE ADICIONA UM BOTÃO QUE MOSTRA A SENHA -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--    Ícones do materialize (ainda não está sendo usado) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="cantoDireito">
+    <img src="..//imagens/imagemDaDireita.png" alt="imagemTelaDeRegistro" class="imagemTelaDeRegistro">      
+</div>
+<div class="iconePetrobrasClass">
+    <img src="..//imagens/iconePetrobras.png" alt="iconePetrobras" class="iconePetrobras">
+</div>
+<div class="dadosPessoais">
+    <form action="telaRegistro2.html" method="post">
+        <div id="caixasDeTexto">
+            <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo" required></br>
+            <p></p>
+            <input type="email" name="emailUsuario" id="emailUsuario" placeholder="Email" autocomplete="email" required></br>
+            <p></p>
+            <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" required>
+            <input type="password" name="confirmarSenhaUsuario" id="confirmarSenhaUsuario" placeholder="Confirme a Senha" required>
+            <i id="olho" class="fas fa-eye toggle-password" onclick="togglePassword()"></i>
+            <p></p>
+        </div>
+        <div class="termosDeUso">
+            <p>
+                <input type="checkbox" name="botaoAceitar" id="botaoAceitar" required>
+                    LI E ACEITO OS 
+                <a href="..//Termos de Uso e privacidade/Termos de Uso.pdf">
+                    TERMOS DE USO
+                </a>
+                    E
+                <a href="..//Termos de Uso e privacidade/Política de Privacidade.pdf">
+                    POLÍTICA DE PRIVACIDADE
+                </a>      
+            </p>
+        </div>
+        </br>
+            <div class="botoes">
+                <input type="submit" value="Voltar" class="botaoVoltar" onclick="history.back()">
+                <input type="submit" value="Continuar" class="botaoContinuar" action="telaRegistro2.html" onclick="return validarSenha()">
+            </div>
+    </form>
+</div>
+
+<script type="text/javascript" src="scriptTelaDeRegistro1.js"></script>
+
+</body>
+</html>

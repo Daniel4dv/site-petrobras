@@ -1,0 +1,93 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  
+    .prehead {
+      background: #C4F9BB;
+      padding: 20px;
+      text-align:left;
+    }
+    
+    .branco {
+      background: #ffffff;
+      padding: 5px;
+      text-align:left ;
+      list-style-type: none;
+     
+    }
+    
+    #nav {
+      display: flex;
+      align-items: center; /* Centraliza verticalmente */
+      justify-content: space-between; /* Distribui os elementos igualmente ao longo do eixo principal */
+      padding: 10px 20px; /* Adiciona um espaçamento interno */
+      margin-left: 200px;
+  }
+  
+    #nav img{
+      margin-left: 10px;
+      width: 100px;
+    }
+  
+    #perfil img {
+      width: 80px; /* Ajuste a largura conforme necessário */
+      height: 80px; /* Ajuste a altura conforme necessário */
+      margin-left: 20px; /* Adiciona um espaçamento à esquerda da imagem do perfil */
+  }
+  #perfil img:hover{
+    width: 82px;
+    height: 82px;
+    margin: 0px -10px -5px 20px
+    
+  }
+
+  .links {
+    text-decoration: none;
+    color:  rgb(4, 105, 4);
+    padding: 15px 30px; /* Ajuste o padding para manter o tamanho constante */
+    border-right: 2px solid rgb(255, 226, 60);
+    text-align: center;
+    display: inline-block;
+    margin-left: -29px; /* Removendo a margem esquerda */
+    margin-right: 10px; 
+    font-size: 20px;
+    font-family:sans-serif;
+    font-weight: lighter;
+    margin-right: 30px;
+    
+  }
+
+.links:hover {
+    background-color: #f8e30019;
+    padding-left: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.222);
+   
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);
+      }
+    
+      #botaologo{
+        display: inline-flex;
+        margin: 0px 0px 20px 0px;
+      }
+
+      input{
+        max-width: 300px;
+        height: 30px;
+        border-radius: 20px;
+        border-color: rgb(4, 105, 4);
+        border-style: solid;
+        font-family: sans-serif;
+        padding-left: 15px;
+      }

@@ -1,0 +1,164 @@
+html{
+    font-family: petr;
+    src: url(..//fontes/fontpetr.ttf);
+    height: 100%;
+}
+.cantoDireito{
+    float: right; /* Posição na tela*/
+}
+form{
+    display: inline-block;
+}
+.imagemTelaDeRegistro{
+    width: 40%; /* largura */ /*valor anterior 650px*/
+    max-width: 100%; /* largura máxima da imagem*/
+    height: auto; 
+     /* altura */ /* valor anterior 623.4px */
+    /*height: auto; */ /* A altura é ajustada automaticamente para manter as proporções */
+    display: block; /* Garante que a imagem não tenha espaço extra embaixo */
+    position: relative; /* A posição da imagem pode ser alterada*/
+    margin: 0 auto;
+}
+body{
+    background-image: linear-gradient(to left, #FCB823, 10%, white); /* Tom verde de fundo */
+    margin: 0px; /* Deixa os elementos laterais colados na parede do navegador */
+}
+.dadosPessoais{
+    text-align: center;
+    margin-top: 50px; /* Altura das caixas de texto */
+    max-width: 100%;
+    height: 50%; 
+    display: block;
+    margin: 0 auto;
+}
+#cepUsuario, #gmailUsuario{
+    width: 290px; /* largura */
+}
+.iconePetrobrasClass{
+    text-align: center;
+}
+#cepUsuario,#cidadeUsuario,#enderecoUsuario{
+    border-color: #008542;
+    border-radius: 5px; /* deixa as quinas arredondadas*/
+    width: 235px;  /* largura */
+    height: 40px; /* altura */
+    border-style: solid;
+    font-size: 17px; /* tamanho da fonte do texto dentro da caixa*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* funcao de sombra */
+    font-family: petr;
+    font-weight: bold;
+}
+
+.botaoVoltar,.botaoContinuar{
+    background-color: #008542;
+    border-radius: 20px; /* deixar os cantos curvos */
+    height: 40px; /* altura */
+    width: 100px; /* largura */
+    text-align: center;
+    border-style: solid; /* deixa a cor da borda fixa, sem interferencia de sombra e outras coisas*/
+    font-size: 15px; /* tamanho da fonte */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /*funcao de sombra*/
+    border-color: #008542; /* Cor da borda dos botões */ 
+    display: inline-block;
+}
+#enderecoUsuario{
+    border-color: #008542;
+    border-radius: 5px; /* deixa as quinas arredondadas*/
+    width: 420px;  /* largura */
+    height: 40px; /* altura */
+    border-style: solid;
+    font-size: 15px; /* tamanho da fonte do texto dentro da caixa*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* funcao de sombra */
+    font-family: petr;
+    font-weight: bold;
+}
+#rgUsuario{
+    border-color: #008542;
+    border-radius: 5px; /* deixa as quinas arredondadas*/
+    width: 235px;  /* largura */
+    height: 40px; /* altura */
+    border-style: solid;
+    font-size: 15px; /* tamanho da fonte do texto dentro da caixa*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* funcao de sombra */
+    font-family: petr;
+    font-weight: bold;
+}
+#cpfUsuario{
+    border-color: #008542;
+    border-radius: 5px; /* deixa as quinas arredondadas*/
+    width: 235px;  /* largura */
+    height: 40px; /* altura */
+    border-style: solid;
+    font-size: 15px; /* tamanho da fonte do texto dentro da caixa*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* funcao de sombra */
+    font-family: petr;
+    font-weight: bold;
+}
+#numeroCasaUsuario{
+    border-color: #008542;
+    border-radius: 5px; /* deixa as quinas arredondadas*/
+    width: 50px;  /* largura */
+    height: 40px; /* altura */
+    border-style: solid;
+    font-size: 15px; /* tamanho da fonte do texto dentro da caixa*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* funcao de sombra */
+    font-family: petr;
+    font-weight: bold;
+}
+#bairroUsuario{
+    border-color: #008542;
+    border-radius: 5px; /* deixa as quinas arredondadas*/
+    width: 235px;  /* largura */
+    height: 40px; /* altura */
+    border-style: solid;
+    font-size: 15px; /* tamanho da fonte do texto dentro da caixa*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* funcao de sombra */
+    font-family: petr;
+    font-weight: bold;
+}
+#telefoneUsuario{
+    border-color: #008542;
+    border-radius: 5px; /* deixa as quinas arredondadas*/
+    width: 235px;  /* largura */
+    height: 40px; /* altura */
+    border-style: solid;
+    font-size: 15px; /* tamanho da fonte do texto dentro da caixa*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* funcao de sombra */
+    font-family: petr;
+    font-weight: bold;
+}
+.textoSuperior{
+    color: #008542;
+    font-size: 4vw; /* tamanho da fonte */
+    font-weight: bold; /* para deixar o texto em negrito*/
+    text-align: center; 
+    font-style: italic; /* para deixar o texto em italico*/
+    margin-top:0px;
+    padding-top: 50px;
+    flex: 1;
+}
+.balao {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    z-index: 999;
+}
+input[type="button"]:hover { /* altera a cor do elemento input do tipo "submit" quando colocar o mouse em cima*/
+    background-color: #00552A; /* cor a ser alterada */
+    border-color: #00552A; /* alterar a cor da borda também*/
+}
+input[type="submit"]:hover { /* altera a cor do elemento input do tipo "submit" quando colocar o mouse em cima*/
+    background-color: #00552A; /* cor a ser alterada */
+    border-color: #00552A; /* alterar a cor da borda também*/
+}
+@media screen and (max-width: 960px) { /*Função para quando a tela tiver menos de 960px de largura, a imagem vai sumir*/
+    .imagemTelaDeRegistro{
+        display: none; /* Define que a imagem vai sumir */
+    }
+}
