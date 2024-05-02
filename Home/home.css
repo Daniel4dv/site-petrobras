@@ -217,7 +217,7 @@ vertical-align: middle; /* Alinha verticalmente com o texto */
 .quadrado3 {
 width: 20px;
 height: 20px;
-background-color: rgb(221, 15, 15); /* Cor do quadrado */
+background-color: rgb(220, 15, 15); /* Cor do quadrado */
 display: inline-block;
 margin-right: 10px; /* Adicione margem entre o quadrado e o texto */
 vertical-align: middle; /* Alinha verticalmente com o texto */
